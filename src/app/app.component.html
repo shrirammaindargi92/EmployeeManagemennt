@@ -1,0 +1,15 @@
+<!--<div class="row form-control">
+<a [routerLink]="['/add']" class="btn btn-success pull-right" (click) = "bool=true" *ngIf = "!bool">ADD NEW</a>
+<a [routerLink]="['/employees']" class="btn btn-success pull-left" (click) = "bool=false" *ngIf = "bool">Go to Home</a>
+</div>
+<router-outlet></router-outlet>
+-->
+<div class="container">
+    <nav class="background-style">
+        <ul class="row">
+         <a [routerLink] = "['/employees']" class="pull-right col-md-3">Employee List</a>
+        <a [routerLink] = "['/add']" class="pull-left col-md-3">Add Employee</a>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
